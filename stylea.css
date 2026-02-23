@@ -1,0 +1,59 @@
+
+body {
+    color: #333;
+    background-color: #020f01;
+     font-family: "Doto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    position: relative;
+    color: #00ff99;
+    text-shadow: 0 0 5px #00ff99, 0 0 15px #00ff99, 0 0 30px #00ff99;
+    cursor: default;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.2em 0.3em;
+    overflow: visible;
+}
+
+.terminal {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0.5em 1em;
+    overflow: visible;
+}
+
+.typing {
+    color: #00ff99;
+    padding: 0.5em;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 0;
+    animation: typing 2.6s steps(22, end) forwards;
+}
+
+.cursor {
+    width: 0.7em;
+    height: 0.85em;
+    background: #00ff99;
+    box-shadow: 0 0 5px #00ff99, 0 0 15px #00ff99, 0 0 30px #00ff99;
+    display: inline-block;
+    animation: blink 0.9s steps(1, end) infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
